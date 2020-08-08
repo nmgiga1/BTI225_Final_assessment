@@ -1,0 +1,66 @@
++<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Najiya Giga</title>
+      <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+      <script src = "info.js"></script>   
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <img src="pic/logo.png" alt="logo" width="150" height="100">
+            <h1>Online Store</h1>
+         </header>
+         <nav>
+            <ul>
+               <li> <a href="honesty.html"> Honesty </a> </li>
+               <li> <a href="info.html"> Info </a> </li>
+               <li> <a href="reflection.html"> Reflection</a></li>
+            </ul>
+            <div class="main">
+               <form name="signup" action = "https://httpbin.org/post " method = "POST" onsubmit= "return formValidation();">
+                  <br />
+                  <input type="hidden" name="lastName" id="lastName" value="giga" /> 
+                  <input type="hidden" name="studentId" id="studentId" value="148831183" /> 
+                  <label for="first_name">First name: </label><input type = "text" name = "first_name" id="first" placeholder = "Input your First name"  required/><br /><br />
+                  <label for="last_name">Last name: </label><input type = "text" name = "last_name" id="last" placeholder = "Input your Last name"  required/><br /><br />
+                  <label for="password">Password: </albrl><input type = "password" name = "password" id="Password" placeholder = "Input your Password"  required /><br /><br />
+                  <label for="RepeatPassword">Repeat password: </label><input type = "password" name = "RepeatPassword" id="Confirm" placeholder = "Confirm your Password"  required/><br /><br />
+                  <label for="Username">Username: </label><input type = "text" name = "Username" id="UserName" placeholder = "Input your User name"  required/><br /><br />
+                  <label for="EducationLevel">Education Level: </label>
+                  <select name="EducationLevel" required>
+                     <option value="">- select</option>
+                     <option value="Technical Diploma"> Technical Diploma</option>
+                     <option value="College Diploma"> College Diploma</option>
+                     <option value="Bachelor's Degree"> Bachelor's Degree</option>
+                     <option value="Master's Degree"> Master's Degree </option>
+                     <option value="Others">  Others </option>
+                  </select>
+                  <br/><br/>
+                  <label for="Status:">Education Status: </label><br/><br/>
+                  <input type="radio" name="Status" value="Graduated" required> Graduated <br />
+                  <input type="radio" name="Status" value="Current enrolled"> Current enrolled <br />
+                  <input type="radio" name="Status" value="Did not graduate"> Did not graduate <br /><br />
+                  <label for="email">Email: </label>
+                  <input type="email" name="email" size="25px" placeholder = "Input your Email address" required><br /><br />
+                  <label for="Age">Age: </label>
+                  <input type="number" name="Age" placeholder = "Choose your Age" min='18' max='60' required><br /><br />
+                  <input type = "submit" value ="Submit" />
+                  <input type = "reset" value ="clear" />
+               </form>
+               <br /><br />
+               </form>
+            </div>
+         </nav>
+         <aside id = "error">Validation Errors:</aside>
+         <footer>
+            <h2>Najiya Giga 2020</h2>
+            <a href="https://github.com/nmgiga1"> My github</a> 
+         </footer>
+      </div>
+   </body>
+</html>
+
+   
+
